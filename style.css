@@ -7,16 +7,18 @@ body {
   text-align: center;
   color: white;
   background-image: url("https://lifeofadailypainter.com/wp-content/uploads/2011/05/bonnies-pond-3.jpg");
-  background-size: 100% 100%
+  background-repeat: no-repeat;
 }
 
 h1 {
   font-size: 45px;
+  font-family: "Courier New";
 }
 
 h2 {
   font-size: 35px;
   font-family: "Courier New";
+  text-decoration: underline;
 }
 
 p {
@@ -57,10 +59,16 @@ li a:active {
 
 div.textbox {
   background-color: rgb(34,139,34,0.5);
+  border-color: lightgreen;
+  border-style: solid;
+  border-width: 1px;
 }
 
 #home_banana_duck {
   width: 50%;
   height: 50%;
-  align: center;
+}
+
+#title {
+  font-family: "Georgia";
 }
