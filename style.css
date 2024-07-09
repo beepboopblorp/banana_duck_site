@@ -6,8 +6,10 @@ html {
 body {
   text-align: center;
   color: white;
-  background-image: url("https://lifeofadailypainter.com/wp-content/uploads/2011/05/bonnies-pond-3.jpg");
+  background-image: url("bgforest.jpg");
   background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
 }
 
 h1 {
@@ -36,12 +38,12 @@ ul {
   font-family: "Courier New";
 }
 
-li {
+li.navbar {
   float: left;
   border: 1px solid lightgreen;
 }
 
-li a {
+li.navbar a {
   display: block;
   color: black;
   text-align: center;
@@ -49,16 +51,12 @@ li a {
   text-decoration: none;
 }
 
-li a:hover {
-  background-color: lightgreen;
-}
-
-li a:active {
+li.navbar a:hover:not(.active) {
   background-color: lightgreen;
 }
 
 div.textbox {
-  background-color: rgb(34,139,34,0.5);
+  background-color: rgb(34,139,34,0.25);
   border-color: lightgreen;
   border-style: solid;
   border-width: 1px;
@@ -71,4 +69,16 @@ div.textbox {
 
 #title {
   font-family: "Georgia";
+}
+
+a.link {
+  font-size: 25px;
+  font-family: 'Courier New';
+  color: white;
+  font-weight: 500;
+}
+
+a.link:hover{
+  color: yellow;
+  font-weight: 900;
 }
