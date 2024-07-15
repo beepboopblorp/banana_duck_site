@@ -67,6 +67,12 @@ div.textbox {
   height: 50%;
 }
 
+#docuseries {
+  float: left;
+  margin-left: 7.5%;
+  width: 22.75%;
+}
+
 #title {
   font-family: "Georgia";
 }
@@ -81,4 +87,23 @@ a.link {
 a.link:hover{
   color: yellow;
   font-weight: 900;
+}
+
+#doctextbox {
+  float: right;
+  margin-right: 7.5%;
+  width: 60%;
+  background-color: rgb(34,139,34,0.25);
+  border-color: lightgreen;
+  border-style: solid;
+  border-width: 1px;
+  font-size: 25px;
+  font-family: "Courier New";
+  padding-bottom: 2%;
+  padding-right: 2%;
+}
+
+p.doctext {
+  text-align: left;
+  text-indent: 5%;
 }
