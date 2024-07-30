@@ -6,10 +6,11 @@ html {
 body {
   text-align: center;
   color: white;
-  background-image: url("bgforest.jpg");
+  background-image: url("images/bgforest.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
+  padding-bottom: 50px;
 }
 
 h1 {
@@ -94,7 +95,6 @@ a.link:hover{
   margin-right: 7.5%;
   width: 60%;
   background-color: rgb(34,139,34,0.25);
-  border-color: lightgreen;
   border-style: solid;
   border-width: 1px;
   font-size: 25px;
@@ -106,4 +106,36 @@ a.link:hover{
 p.doctext {
   text-align: left;
   text-indent: 5%;
+}
+
+input {
+  width: 85%;
+  font-size: 20px;
+  font-family: "Courier New";
+  background-color: #eee;
+  padding-left: 10px;
+}
+
+#sendbtn {
+  height: 25px;
+  width: 5%;
+}
+
+#generateduck {
+  height: 200px;
+}
+
+#displaymsg {
+  text-align: left;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+h3 {
+  font-family: "Courier New";
+  font-weight: bold;
+}
+
+img.chart {
+  width: 500px;
 }
