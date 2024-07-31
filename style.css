@@ -139,3 +139,42 @@ h3 {
 img.chart {
   width: 500px;
 }
+
+#index {
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+#generatebtn {
+  background-color: rgb(34,139,34);
+  color: white;
+  border-color: white;
+  border-radius: 15px;
+  border-width: 3px;
+  height: 30px;
+  width: 200px;
+  font-size: 15px;
+}
+
+#generatebtn:hover {
+  border-color: yellow;
+  border-width: 5px;
+  color: yellow;
+}
+
+#sendbtn {
+  background-color: rgb(34,139,34);
+  color: white;
+  border-color: white;
+  border-radius: 15px;
+  border-width: 3px;
+  height: 30px;
+  width: 75px;
+  font-size: 15px;
+}
+
+#sendbtn:hover {
+  border-color: yellow;
+  border-width: 5px;
+  color: yellow;
+}

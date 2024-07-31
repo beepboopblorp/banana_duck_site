@@ -10,6 +10,7 @@ if (generatebtn) {
 function generateimg() {
   var randnum = Math.random() * 100;
   console.log(randnum);
+  
   if (generateduck.getAttribute("src") == "https://media.tarkett-image.com/large/TH_24567080_24594080_24596080_24601080_24563080_24565080_24588080_001.jpg") {
     document.getElementById('displaymsg').innerHTML = "";
     if (0 <= randnum && randnum < 20) {
@@ -45,9 +46,7 @@ if (sendbtn) {
   sendbtn.addEventListener("click", sendmsg);
 }            
 
-
-
-let msg = document.getElementById('send').value;
+let msg = "";
 let msgarray = [];
 let msgbox = "";
 let x = 0;
