@@ -43,28 +43,24 @@ function generateimg() {
 
 const sendbtn = document.getElementById('sendbtn');
 if (sendbtn) {
-  sendbtn.addEventListener("click", sendmsg);
+  sendbtn.addEventListener("click", waiting);
 }            
 
 let msg = "";
 let msgarray = [];
 let msgbox = "";
 let x = 0;
+let typbox = "";
 
 function sendmsg() {
   if (generateduck.getAttribute("src") != "https://media.tarkett-image.com/large/TH_24567080_24594080_24596080_24601080_24563080_24565080_24588080_001.jpg") {
-    quack();
     let msg = document.getElementById('send').value;
     msgarray[x] = msg;
-    console.log(msgarray);
     msgbox += `<h3> You: </h3>
-        <p> ${msgarray[x]} </p>
-      <hr>
-        <h3> ${randuckname}: </h3>
-        <p> ${randquackans} </p>
+      <p> ${msgarray[x]} </p>
       <hr>`;
     document.getElementById('displaymsg').innerHTML = msgbox;
-    ++x;
+    setTimeout(typing, 2000);
     document.getElementById('send').value = "";
   } else {
     document.getElementById('displaymsg').innerHTML = `<h2 id:'generaterror' style="color:red;"> You must find a banana duck first. </h2>`;
@@ -89,4 +85,27 @@ function quack() {
       randquack = "Quack?!"
   }}
   randquackans = randquack;
+}
+
+function waiting() {
+  sendmsg();
+  setTimeout(sendquack, 5000);
+}
+
+function sendquack() {
+  if (generateduck.getAttribute("src") != "https://media.tarkett-image.com/large/TH_24567080_24594080_24596080_24601080_24563080_24565080_24588080_001.jpg") {
+    quack();
+    typbox = "";
+    document.getElementById('typingbox').innerHTML = ``;
+    msgbox += `<h3> ${randuckname}: </h3>
+        <p> ${randquackans} </p>
+      <hr>`;
+    document.getElementById('displaymsg').innerHTML = msgbox;
+    ++x;
+  }
+}
+
+function typing() {
+  typbox = `${randuckname} is typing...`;
+  document.getElementById('typingbox').innerHTML = typbox;
 }

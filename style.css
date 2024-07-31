@@ -178,3 +178,9 @@ img.chart {
   border-width: 5px;
   color: yellow;
 }
+
+#typingbox {
+  font-size: 13px;
+  font-style: italic;
+  text-align: center;
+}
