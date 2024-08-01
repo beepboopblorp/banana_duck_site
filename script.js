@@ -9,7 +9,6 @@ if (generatebtn) {
 
 function generateimg() {
   var randnum = Math.random() * 100;
-  console.log(randnum);
   
   if (generateduck.getAttribute("src") == "https://media.tarkett-image.com/large/TH_24567080_24594080_24596080_24601080_24563080_24565080_24588080_001.jpg") {
     document.getElementById('displaymsg').innerHTML = "";

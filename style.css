@@ -71,7 +71,7 @@ div.textbox {
 #docuseries {
   float: left;
   margin-left: 7.5%;
-  width: 22.75%;
+  width: 22.80%;
 }
 
 #title {
@@ -183,4 +183,8 @@ img.chart {
   font-size: 13px;
   font-style: italic;
   text-align: center;
+}
+
+img.merchimg {
+  height: 400px;
 }
