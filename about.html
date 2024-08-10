@@ -26,7 +26,17 @@
     </h1>
     <p> Hi! Welcome to the *Official* Banana Duck Conservation Website! We are committed to providing information and bringing attention to banana ducks, and the struggles they've been facing recently.</p>
     <h2> Do you have unanswered questions about banana ducks? Ask them here!:</h2>
-    
+      <label for="yourname">Name: </label>
+      <input id="yourname" name="yourname" class="abtinput" type="text" required minlength="1" placeholder="Your Name">
+      <label for="youremail">Email Address: </label>
+      <input class="abtinput" id="youremail" name="youremail" type="email" required minlength="1" placeholder="Your Email">
+      <br><br>
+      <label for="yourquestion">What is Your Question?: </label>
+      <br>
+      <input id="yourquestion" name="yourquestion" type="text" required minlength="1" placeholder="Your Question">
+      <br><br>
+      <button id="submitbtn">Submit</button>
+      <p id="inputtext"></p>
   </div>
   <script src="script.js"></script>
 </body>

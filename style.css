@@ -10,7 +10,6 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
-  padding-bottom: 50px;
 }
 
 h1 {
@@ -187,4 +186,34 @@ img.chart {
 
 img.merchimg {
   height: 400px;
+}
+
+input.abtinput {
+  width: 450px;
+}
+
+#yourname {
+  margin-right: 50px;
+}
+
+#submitbtn {
+  background-color: rebeccapurple;
+  width: 200px;
+}
+
+div.footer {
+  bottom: 0;
+  background-color: rebeccapurple;
+  width: 100%;
+  height: 30px;
+  padding-top: 15px;
+}
+
+#adminacc {
+  color: white;
+  font-size: 15px;
+}
+
+#adminacc:hover {
+  color: yellow;
 }
