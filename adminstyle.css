@@ -41,7 +41,7 @@ input.admlogin {
 #loginsuccess {
   font-size: 20px;
   color: red;
-  font-weight: 'bold';
+  font-weight: 700;
 }
 
 #loginbtn {

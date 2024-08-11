@@ -27,7 +27,7 @@ let password = document.getElementById('adminpass');
 function login() {
   if (username.value === 'adminUsername' && password.value === 'babanaduckie') {
     document.getElementById('loginsuccess').innerHTML = `
-      <p> Login Successful! Press CONTINUE to proceed. </p>
+      <p style="color:#03AC13;"> Login Successful! Press CONTINUE to proceed. </p>
       <a href="questions.html" id="qpagelink"> Continue </a>`;
   } else {
     document.getElementById('loginsuccess').innerHTML = `
